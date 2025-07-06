@@ -1,10 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Meu Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Henrique | Ciência de Dados</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin: 1rem auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        section {
+            background-color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .interest-card {
+            background-color: var(--light-color);
+            padding: 1rem;
+            border-radius: 5px;
+            flex: 1 1 200px;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--dark-color);
+            color: white;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Site do Pedro</h1>
-    <p>Olá, bem-vindo a minha página!</p>
+    <header>
+        <div class="container">
+            <!-- Adicione uma foto sua aqui substituindo o src -->
+            <img src="https://via.placeholder.com/150" alt="Foto de Pedro Henrique" class="profile-pic">
+            <h1>Pedro Henrique Rocha de Jesus</h1>
+            <p>Estudante de Ciência da Computação | IME-USP</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Pedro Henrique Rocha de Jesus, tenho 20 anos e atualmente estou no final do terceiro semestre no curso de Bacharelado em Ciências da Computação (BCC) no IME-USP.</p>
+            
+            <p>Uma das disciplinas mais marcantes que cursei foi <strong>MAC0102 - Caminhos no Bacharelado em Ciência da Computação</strong>, que apresentou um conjunto de palestras que me influenciaram a seguir a trilha de <strong>Ciência de Dados</strong> dentro do curso.</p>
+            
+            <p>Minha decisão pela área de dados veio pelo fascínio com as matérias envolvendo <strong>Inteligência Artificial</strong> e <strong>Estatística</strong>, duas áreas do conhecimento que me interessam muito. Além disso, tenho grande curiosidade em aprender a manipular e extrair insights de grandes volumes de informação.</p>
+        </section>
+        
+        <section id="interests">
+            <h2>Interesses e Hobbies</h2>
+            <div class="interests">
+                <div class="interest-card">
+                    <h3>Ciência de Dados</h3>
+                    <p>Explorando técnicas de análise de dados, machine learning e visualização de informações.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>Línguas Estrangeiras</h3>
+                    <p>Estudar novos idiomas e culturas é uma paixão que vai além da área técnica.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>Videogames</h3>
+                    <p>Nos momentos de lazer, gosto de jogar e analisar a construção de narrativas digitais.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Formação Acadêmica</h2>
+            <p><strong>Bacharelado em Ciência da Computação</strong><br>
+            Instituto de Matemática e Estatística - Universidade de São Paulo (IME-USP)<br>
+            Início: 2023 | Previsão de conclusão: 2026</p>
+            
+            <h3>Disciplinas Relevantes:</h3>
+            <ul>
+                <li>MAC0102 - Caminhos no Bacharelado em Ciência da Computação</li>
+                <li>MAT0122 - Álgebra Linear I</li>
+                <li>MAC0110 - Introdução à Computação</li>
+                <!-- Adicione outras disciplinas importantes que você já cursou -->
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2024 Pedro Henrique Rocha de Jesus</p>
+            <p>Contato: [seu-email@usp.br] | [seu telefone]</p>
+            <!-- Adicione links para suas redes sociais se quiser -->
+        </div>
+    </footer>
 </body>
 </html>
